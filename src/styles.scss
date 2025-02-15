@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+// Custom variant for the darkmode
+@custom-variant dark (&:where(.dark, .dark *));
+

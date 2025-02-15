@@ -36,11 +36,13 @@ git clone https://github.com/Likeur/ngStarter.git ngstarter
 
 3. Navigate to the repertory
 
+
 ```bash
-cd Angularstarter
+cd ngstarter
 ```
 
 4. Install all the required dependancies
+
 
 ```bash
 npm install
@@ -49,6 +51,7 @@ npm install
 5. Start the Development server
 
 To start a local development server, run:
+
 
 ```bash
 ng serve -o

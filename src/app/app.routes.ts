@@ -4,7 +4,7 @@ export const routes: Routes = [
     {
         path:'',
         title: 'Angular 19 starter repos',
-        loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent)
+        loadComponent: () => import('./pages/landing-page/landing-page.component').then(m => m.LandingPageComponent)
     },
     {
         path:'login',

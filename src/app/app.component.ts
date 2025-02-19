@@ -1,4 +1,3 @@
-import { DOCUMENT } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
@@ -9,11 +8,7 @@ import { RouterOutlet } from '@angular/router';
   styles: [],
 })
 export class AppComponent implements OnInit {
-  
-
   isDarkMode: boolean = false;
-
-  private document: Document = inject(DOCUMENT);
 
   updateTheme() {
     // Ajout du darkmode selon le theme du systeme light ou dark
@@ -35,12 +30,12 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    
-
     // Appeler la fonction une première fois pour définir le thème initial
     this.updateTheme();
 
     // Écouter les changements de thème
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', this.updateTheme);
+    window
+      .matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', this.updateTheme);
   }
 }
